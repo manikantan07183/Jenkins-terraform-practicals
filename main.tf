@@ -21,6 +21,6 @@ resource "aws_iam_user" "new_user" {
 resource "aws_instance" "ec2_instance" {
   ami           = "ami-00a929b66ed6e0de6"  # Amazon Linux 
   instance_type = "t2.micro"
-  force_destroy = true
+
 
 }
