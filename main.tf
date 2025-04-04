@@ -14,11 +14,10 @@ provider "aws" {
 # Create IAM User
 resource "aws_iam_user" "new_user" {
   name = "terraform-user"
-  force_destroy = true
 }
 
 # Create EC2 Instance
-resource "aws_instance" "ec2_instance" {
+resource "aws_instance" "instance" {
   ami           = "ami-00a929b66ed6e0de6"  # Amazon Linux 
   instance_type = "t2.micro"
 
